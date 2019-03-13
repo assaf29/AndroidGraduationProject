@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/userphoto"
+            android:layout_marginTop="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userName"
+            android:text="name "
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="40dp"
+            android:textColor="#23283a"/>
+        <TextView
+            android:id="@+id/userGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="50dp"
+            android:text="Description"
+            android:textColor="#9b9ea3"
+            android:textSize="13dp"
+            android:layout_marginLeft="180dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/userCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="category"
+        android:textColor="#7c4dff"
+        android:textSize="18dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="60dp"/>
+
+
+</LinearLayout>

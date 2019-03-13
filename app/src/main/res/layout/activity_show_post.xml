@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ShowPostActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical"
+            android:background="#ffffce">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="292dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="128dp"
+                    android:layout_marginRight="128dp"
+                    android:text="title"
+                    android:textColor="#7c4dff"
+                    android:textSize="22dp" />
+
+                <EditText
+                    android:id="@+id/editPostTitleID"
+                    android:layout_width="292dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="13dp"
+                    android:layout_marginEnd="128dp"
+                    android:layout_marginRight="128dp"
+                    android:text="title"
+                    android:textColor="#7c4dff"
+                    android:textSize="22dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/postDate"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="247dp"
+                    android:layout_marginLeft="247dp"
+                    android:layout_marginTop="67dp"
+                    android:gravity="right"
+                    android:text="date"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/postUsername"
+                    android:layout_width="164dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginTop="60dp"
+                    android:text="userName" />
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="554dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editPostContentID"
+            android:layout_width="wrap_content"
+            android:layout_height="554dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="start"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:paddingTop="50dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+
+                android:background="#efefef"
+                android:outlineSpotShadowColor="@color/colorAccent"
+                android:paddingTop="60dp"></View>
+
+            <ListView
+                android:id="@+id/commentListView"
+                android:layout_width="match_parent"
+                android:layout_height="480dp"
+                android:layout_marginTop="100dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="120dp"
+                android:layout_marginRight="162dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="true"
+                android:onClick="commentClick"
+                android:paddingBottom="50dp"
+                app:srcCompat="@mipmap/ic_comment" />
+
+            <Button
+                android:id="@+id/editBtn"
+                android:onClick="editClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="93dp"
+                android:layout_marginLeft="93dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Edit"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/deleteBtn"
+                android:onClick="deleteClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="250dp"
+                android:layout_marginLeft="93dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/buttonstyle"
+                android:text="Delete"
+                android:visibility="gone" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/saveBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="180dp"
+                android:layout_marginLeft="93dp"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:visibility="gone"
+                app:srcCompat="@mipmap/ic_save" />
+
+            <Button
+                android:id="@+id/btnOffer"
+                android:onClick="offerClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="500dp"
+                android:layout_marginEnd="225dp"
+                android:layout_marginRight="232dp"
+                android:layout_marginBottom="6dp"
+                android:text="اضافة عرض"
+                android:background="@drawable/buttonstyle"
+                ></Button>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+
+

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">New Test</string>
+    <string-array name="search">
+        <item>تطوير البرامج</item>
+        <item>التصميم والمونتاج</item>
+        <item>الترجمة</item>
+        <item>الدعاية والإعلان</item>
+        <item>عام</item>
+
+    </string-array>
+
+
+    <string-array name="prices">
+        <item>0 - 500</item>
+        <item>500 - 1000</item>
+        <item>1000 - 5000</item>
+        <item>5000 - 10000</item>
+        <item>10000 - 15000</item>
+        <item>15000 - 20000</item>
+        <item> يحدد بالاتفاق </item>
+    </string-array>
+</resources>
